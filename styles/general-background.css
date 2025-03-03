@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #0d0221, #20025f, #3a0ca3, #1f51ff);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: gradientAnimation 15s ease infinite;
+    color: white; 
+}
+
+/*השפעת הרקע על כל הגוף חוץ מאלמנט מסוים*/
+body > *:not(#futuristic-bg) { 
+    position: relative;
+    z-index: 2;
+}
+
+
+/*אנימציית רקע*/
+@keyframes gradientAnimation { 
+    0% { background-position: 0% 50%; } /*תחילת אנימציה*/
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; } /*סיום אנימציה*/
+}
+
+
+#futuristic-bg {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0 0;
+    z-index: 0;
+}
+
+/* אפקט רקע עתידני מגניב */
+#futuristic-bg::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(31, 81, 255, 0.4), transparent 70%);
+    animation: pulseEffect 8s infinite;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+
+@keyframes pulseEffect {
+    0%, 100% { transform: scale(1) rotate(45deg); }
+    50% { transform: scale(1.5) rotate(45deg); }
+}
+
+#futuristic-bg::after {
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(58, 12, 163, 0.3), transparent 80%);
+    animation: rotateEffect 12s infinite linear;
+    transform: rotate(0deg);
+    z-index: 1;
+}
+
+@keyframes rotateEffect {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* אפקט זוהר */
+.glow-circle {
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 10px rgba(31, 81, 255, 0.6);
+    animation: floatEffect 6s ease-in-out infinite;
+}
+
+/*אפקט ריחוף של העיגולים*/  
+@keyframes floatEffect {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.circle1 {
+    width: 100px;
+    height: 100px;
+    background: rgba(31, 81, 255, 0.8);
+    top: 20%;
+    left: 30%;
+}
+
+.circle2 {
+    width: 120px;
+    height: 120px;
+    background: rgba(58, 12, 163, 0.8);
+    bottom: 10%;
+    right: 25%;
+}
+
+.circle3 {
+    width: 80px;
+    height: 80px;
+    background: rgba(140, 41, 226, 0.6);
+    bottom: 30%;
+    left: 15%;
+}
