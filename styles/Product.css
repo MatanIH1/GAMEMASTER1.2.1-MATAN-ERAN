@@ -45,9 +45,11 @@ body {
     margin-bottom: 10px;
 }
 
-.product-details h1 {
+.doomlogoh1 { 
     font-size: 3em;
-    margin-bottom: 100px;
+    color: #ff9900;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .product-description {
