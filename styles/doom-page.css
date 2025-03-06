@@ -1,61 +1,63 @@
-@import url(general-background.css);
 @import url(menu.css);
+@import url(general-background.css);
+@import url(credits.css);
+
+
 .container {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-}
-
-h1 {
-    margin-bottom: 1.5rem;
-    color: #333;
-    font-size: 2rem;
-}
-
-form {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
-label {
-    margin-bottom: 0.5rem;
-    color: #555;
-    font-size: 0.9rem;
-    text-align: left;
-}
-
-input {
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-}
-
-input:focus {
-    border-color: #007bff;
-    outline: none;
-}
-
-.button {
-    background-color: #007bff;
-    color: white;
-    padding: 0.75rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    text-decoration: none;
+.product {
+    background: 
+    border-radius: 50px;
+    padding: 20px;
     text-align: center;
-    transition: background-color 0.3s ease;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
 }
 
-.button:hover {
-    background-color: #0056b3;
+.product-image img {
+    width: 100%;
+    border-radius: 10px;
 }
 
+.product-details {
+    margin-top: 20px;
+}
+
+#doomlogoh1 {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #bbb;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.buy-now {
+    display: block;
+    text-decoration: none;
+    background: #0800ff;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.buy-now:hover {
+    background: #969696;
+} */
