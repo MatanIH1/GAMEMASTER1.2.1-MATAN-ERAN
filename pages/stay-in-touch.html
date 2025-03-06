@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/index.css">
     <title>Stay in touch</title>
+    
 </head>
-<body>
+<body font-family: 'Radjhani', sans-serif;>
     <div id="futuristic-bg">
         <div class="glow-circle circle1"></div>
         <div class="glow-circle circle2"></div>
@@ -54,16 +55,25 @@
      
      
             <main id="register-form">
-                <h1>Create an account</h1>
-                <form action="/submit_registration" method="post">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required><br><br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required><br><br>
-                    <a href="Thank-You.html" class="button">Register</a>
-                </form>
+                <div class="container">
+                    <h1>Create an Account</h1>
+                    <form action="/submit_registration" method="post">
+                        <label for="username" aria-placeholder="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+            
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+            
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+            
+                        <a href="Thank-You.html" class="button">Register</a>
+                    </form>
+            
+                    <div class="forgot-password">
+                        <p>Already have an account? <a href="#">Login</a></p>
+                    </div>
+                </div>
            
 
             
