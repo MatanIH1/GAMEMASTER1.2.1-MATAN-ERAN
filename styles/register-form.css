@@ -1,9 +1,7 @@
-body{
-    margin: 0;
-    font-family: 'Radjhani', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
 
 .container {
+    font: radjhani;
     display: block;
     margin: 0 auto;
     background-color: #5a6cd684;
