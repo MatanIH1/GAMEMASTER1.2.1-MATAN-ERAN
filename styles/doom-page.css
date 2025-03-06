@@ -1,3 +1,5 @@
+@import url(general-background.css);
+@import url(menu.css);
 .container {
     background-color: #ffffff;
     padding: 2rem;
@@ -57,17 +59,3 @@ input:focus {
     background-color: #0056b3;
 }
 
-.forgot-password {
-    margin-top: 1rem;
-    color: #555;
-    font-size: 0.9rem;
-}
-
-.forgot-password a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.forgot-password a:hover {
-    text-decoration: underline;
-}
