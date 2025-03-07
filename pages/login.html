@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/index.css">
+    <title>Log in</title>
 </head>
+
 <body>
-    
+    <div id="futuristic-bg">
+        <div class="glow-circle circle1"></div>
+        <div class="glow-circle circle2"></div>
+        <div class="glow-circle circle3"></div>
+    </div>
+    <header id="header_region">
+        <nav>
+        <ul id="main_menu">
+                    <li class="nav_item">
+                        <img src="/assets/images/GameMasterLogo.png" alt="Game Master Logo" id="logo">
+                    </li>
+                    <li class="nav_item">
+                        <a href="Main page.html" 
+                           title="Home" 
+                           >Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="Consoles.html" 
+                           title="Take a glimpse at our state-of-the-art consoles" 
+                           >Consoles</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="Games-Catalogue.html" 
+                           title="Browse our gaming catalogue" 
+                           >Games Catalogue</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="stay-in-touch.html" 
+                           title="Register to keep in touch!" 
+                           >Stay in touch</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="About-us.html" 
+                           title="Learn where our story started" 
+                           >About us</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="My-profile.html" 
+                           title="My profile" 
+                           ><img src="/assets/images/profile-icon.png" id="profile"></a>
+                    </li>
+                    
+                   
+            </ul>
+            </nav>
+        </header>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Log In</button>
+        </form>
+    </div>
 </body>
 </html>

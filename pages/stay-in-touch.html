@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/index.css">
     <title>Stay in touch</title>
     
@@ -47,8 +48,8 @@
                     <li class="nav_item">
                         <a href="My-profile.html" 
                            title="My profile" 
-                           >My profile</a>
-                    </li>      
+                           ><img src="/assets/images/profile-icon.png" id="profile"></a>
+                    </li> 
             </ul>
             </nav>
         </header>
@@ -59,19 +60,19 @@
                     <h1>Create an Account</h1>
                     <form action="/submit_registration" method="post">
                         <label for="username" aria-placeholder="username">Username:</label>
-                        <input type="text" id="username" name="username" required>
+                        <input type="text" id="username" name="username" required placeholder="username">
             
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" required placeholder="name@example.com">
             
                         <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" required>
+                        <input type="password" id="password" name="password" required placeholder="***********">
             
                         <a href="Thank-You.html" class="button">Register</a>
                     </form>
             
                     <div class="forgot-password">
-                        <p>Already have an account? <a href="#">Login</a></p>
+                        <p>Already have an account? <a href="login.html">Login</a></p>
                     </div>
                 </div>
            

@@ -84,8 +84,8 @@ body > *:not(#futuristic-bg) {
 
 /*אפקט ריחוף של העיגולים*/  
 @keyframes floatEffect {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+    0%, 100% { transform: translateY(0); } /*תחילת וסיום האנימציה*/
+    50% { transform: translateY(-20px); } /*אמצע האנימציה*/
 }
 
 .circle1 {

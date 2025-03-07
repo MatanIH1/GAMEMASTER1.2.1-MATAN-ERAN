@@ -1,7 +1,8 @@
 
 
 .container {
-    font: radjhani;
+    font: Rajdhani;
+    background-color: #11018d8e;
     display: block;
     margin: 0 auto;
     background-color: #5a6cd684;
@@ -73,5 +74,5 @@ input:focus {
 }
 
 .forgot-password a:hover {
-    text-decoration: 
+    text-decoration: underline;
 }

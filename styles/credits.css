@@ -4,7 +4,11 @@
     color: white;
     text-align: center;
     width: 100%;
-    position: relative;
+    position: sticky;
+    bottom: 0;
+    font:Rajdhani;
+    padding: 10px;
+
 }
 
 #credits p{

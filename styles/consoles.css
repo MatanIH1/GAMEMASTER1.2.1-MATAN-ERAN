@@ -1,11 +1,5 @@
-@import url(general-background.css);
-@import url(menu.css);
 
-body
-{
-    margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
 /* Main container */
 #main_content {
     max-width: 1000px;
@@ -37,7 +31,6 @@ body
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
     gap: 20px;
     list-style: none;
-    padding: 0;
     justify-content: center;
 }
 

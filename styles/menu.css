@@ -1,23 +1,22 @@
 body {
-   margin: 0;
-   font-family:'Radjhani', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+   font-family:'Radjhani'
 }
 
 #header_region {
-   position:sticky;
+   position:sticky; 
    top:0;
    background-color: #090964; 
    padding:0;
    margin: 0;
-   z-index: 1000;
+   z-index: 1000; 
 }
 
 /*grid layout*/
 #main_menu {
    display: grid; 
-   grid-auto-flow: column; 
+   grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr;
    align-items: center; 
-   gap: 15px;
+   gap: 5px;
    list-style: none; 
    padding: 0;
    margin: 0;
@@ -36,7 +35,7 @@ body {
    text-decoration: none;
    color: #fff; 
    font-size: 16px; 
-   padding: 3px 5px; 
+   padding: 3px 0px; 
 }
 
 /*אפקט העברת העכבר על הקישור*/
@@ -47,6 +46,63 @@ body {
    transition: background-color 0.3s ease-in-out;
 
 }
+ 
+/* Ensure that the profile icon is properly sized */
+#profile {
+   height: 40px;
+   width: 40px;
+   display: block;
+   cursor: pointer;
+}
+
+/* Ensure that the parent <li> is positioned relative */
+.nav_item {
+   position: relative;
+}
+
+/* Dropdown menu hidden by default */
+.dropdown-menu {
+   display: none;  /* Hidden by default */
+   position: absolute;
+   background: white;
+   list-style: none;
+   padding: 10px 0;
+   margin: 0;
+   top: 100%;  /* Position it directly below the icon */
+   left: 0;    /* Align it to the left of the icon */
+   min-width: 120px;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+   z-index: 1000;
+}
+
+/* Show dropdown menu when hovering over the parent <li> */
+.nav_item:hover .dropdown-menu {
+   display: block;  /* Only show when hovering over the parent <li> */
+}
+
+/* Keep dropdown visible when hovering over the dropdown menu itself */
+.nav_item:hover .dropdown-menu,
+.dropdown-menu:hover {
+   display: block;  /* Keep it visible when hovering over the dropdown */
+}
+
+/* Styling for the dropdown items */
+.dropdown-menu li {
+   padding: 8px 15px;
+}
+
+.dropdown-menu li a {
+   text-decoration: none;
+   color: black;
+   display: block;
+}
+
+/* Hover effect for the dropdown items */
+.dropdown-menu li:hover {
+   background: #f0f0f0;
+}
+
 
 
 /* התאמת עיצוב רספונסיבי */

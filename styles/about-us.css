@@ -26,23 +26,9 @@
     line-height: 1.5;
 }
 
-#Matan, #Eran {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-#Matan {
-    grid-column: 1;
-}
-
-#Eran {
-    grid-column: 2;
-}
-
 #about_us_profiles {
     display: grid;
-    grid-template-columns:50% 50%;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 20px;
 }
