@@ -78,7 +78,7 @@ body {
 
 /* Show dropdown menu when hovering over the parent <li> */
 .nav_item:hover .dropdown-menu {
-   display: block;  /* Only show when hovering over the parent <li> */
+   display: block;   
 }
 
 /* Keep dropdown visible when hovering over the dropdown menu itself */
