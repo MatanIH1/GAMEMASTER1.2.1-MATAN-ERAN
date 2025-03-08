@@ -1,14 +1,7 @@
 
 #thank-you {
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    grid-template-rows: auto 1fr;
     margin: 0 20px;
-    background-color: #ffffff00;
     padding: 20px 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -19,7 +12,7 @@ h1 {
 }
 
 p {
-    color: #666;
+    color: #ffffff;
     font-size: 1.2em;
     margin-bottom: 30px;
 }
@@ -33,6 +26,8 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 250px;
+    position: relative;
 }
 
 button:hover {

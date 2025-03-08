@@ -14,7 +14,7 @@ body {
 /*grid layout*/
 #main_menu {
    display: grid; 
-   grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr 1fr;
    align-items: center; 
    gap: 5px;
    list-style: none; 
@@ -60,20 +60,20 @@ body {
    position: relative;
 }
 
-/* Dropdown menu hidden by default */
+/*תפריט מוסתר באופן דפולטיבי*/
 .dropdown-menu {
-   display: none;  /* Hidden by default */
+   display: none;  /*הסתרת התפריט*/
    position: absolute;
    background: white;
    list-style: none;
    padding: 10px 0;
    margin: 0;
-   top: 100%;  /* Position it directly below the icon */
-   left: 0;    /* Align it to the left of the icon */
+   top: 100%;  
+   left: 0;    
    min-width: 120px;
    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
    border-radius: 5px;
-   z-index: 1000;
+   z-index: 1000; /* מוודא שהתפריט יופיע מעל כל האלמנטים האחרים */
 }
 
 /* Show dropdown menu when hovering over the parent <li> */

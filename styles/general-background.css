@@ -3,9 +3,9 @@ body {
     padding: 0;
     height: 100vh;
     background: linear-gradient(135deg, #0d0221, #20025f, #3a0ca3, #1f51ff);
-    background-size: cover; 
+    background-size: cover;  
     background-position: center; 
-    background-repeat: no-repeat;
+    background-repeat: round;
     background-attachment: fixed;
     animation: gradientAnimation 15s ease infinite;
     color: white; 
@@ -14,7 +14,7 @@ body {
 /*השפעת הרקע על כל הגוף חוץ מאלמנט מסוים*/
 body > *:not(#futuristic-bg) { 
     position: relative;
-    z-index: 2;
+    z-index: 2; 
 }
 
 
@@ -27,7 +27,7 @@ body > *:not(#futuristic-bg) {
 
 
 #futuristic-bg {
-    position: absolute;
+    position: absolute; 
     overflow: hidden;
     height: 100%;
     display: flex;
