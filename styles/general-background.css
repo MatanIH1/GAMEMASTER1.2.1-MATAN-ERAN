@@ -8,7 +8,7 @@ body {
     background-repeat: round;
     background-attachment: fixed;
     animation: gradientAnimation 15s ease infinite;
-    color: white; 
+    color: rgb(255, 255, 255); 
 }
 
 /*השפעת הרקע על כל הגוף חוץ מאלמנט מסוים*/
