@@ -1,11 +1,7 @@
-/* General Styles */
-body {
+body{
     font-family: 'Rajdhani', sans-serif;
-    background-color: #000a9088; /* Dark theme */
-    color: #fff;
 }
 
-/* Product Container - Flexbox for Layout */
 .product-container {
     display: flex;
     align-items: center;
@@ -66,4 +62,30 @@ body {
     width:300px;
     height:150px;
     border-radius: 6px;
+    margin: 10px;
+}
+
+.credits {
+    background-color: #000283c0;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+    }
+
+    .product-details {
+        padding-right: 0;
+    }
+
+    .product-image img {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
 }

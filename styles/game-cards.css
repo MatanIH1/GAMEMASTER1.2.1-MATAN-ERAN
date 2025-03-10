@@ -79,3 +79,7 @@
 .game-info button:hover {
     background-color: #005bb5;
 }  
+
+.game-card a{
+    text-decoration: none;
+}
