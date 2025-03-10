@@ -14,14 +14,14 @@
     display: none;
 }
 
-/* עיצוב תפריט ההמבורגר */
+/* עיצוב התפריט */
 .mobile-menu {
     list-style: none;
     padding: 0;
     margin: 0;
     background-color: #111;
     position: absolute;
-    top: 60px; /* גובה התפריט הראשי */
+    top: 60px; /* התאמה לגובה הניווט */
     left: 0;
     width: 100%;
     display: none;
@@ -44,31 +44,22 @@
     display: block;
 }
 
-/* הצגת תפריט המבורגר רק במסכים קטנים */
-@media (max-width: 768px) {
-    .hamburger-menu {
-        display: block;
-    }
-    #main_menu {
-        display: none; /* מסתיר את התפריט הראשי במסכים קטנים */
-    }
-}
-
-/* הצגת התפריט הרגיל במסכים גדולים והסתרת ההמבורגר */
-@media (min-width: 769px) {
+/* עיצוב רספונסיבי - הצגת ההמבורגר רק במסכים קטנים */
+@media (min-width: 768px) {
     .hamburger-menu {
         display: none;
     }
 }
-.mobile-menu {
-    transition: all 0.3s ease-in-out;
-    opacity: 0;
-    transform: translateY(-10px);
+/* הסתרת התפריט הרגיל במסכים קטנים */
+@media (max-width: 768px) {
+    #main_menu {
+        display: none;
+    }
 }
 
-/* הצגת התפריט עם אנימציה */
-#menu-toggle:checked + .hamburger-icon + .mobile-menu {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
+/* הצגת תפריט ההמבורגר רק במסכים קטנים */
+@media (min-width: 769px) {
+    .hamburger-menu {
+        display: none;
+    }
 }
