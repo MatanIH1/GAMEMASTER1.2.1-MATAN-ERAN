@@ -1,45 +1,43 @@
 body {
     margin: 0;
     padding: 0;
-    min-height: 300vh; /* Ensures enough space for scrolling */
+    height: 100vh;
     background: linear-gradient(135deg, #0d0221, #20025f, #3a0ca3, #1f51ff);
-    background-size: 100% 300%; /* Allows scrolling effect */
-    background-position: center top;
+    background-size: cover;  
+    background-position: center; 
     background-repeat: no-repeat;
-    background-attachment: fixed; 
-    color: rgb(0, 3, 201); 
+    background-attachment:scroll;
+    animation: gradientAnimation 15s ease infinite;
+    color: white; 
 }
 
+/*השפעת הרקע על כל הגוף חוץ מאלמנט מסוים*/
 body > *:not(#futuristic-bg) { 
     position: relative;
-    z-index: 2; 
+    z-index: 1; 
 }
 
-/* Ensures the background moves dynamically */
-@keyframes gradientAnimation {
-    0% { background-position: 0% 0%; } /* Start */
-    100% { background-position: 0% 100%; } /* Moves downward */
+
+/*אנימציית רקע*/
+@keyframes gradientAnimation { 
+    0% { background-position: 0% 50%; } /*תחילת אנימציה*/
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; } /*סיום אנימציה*/
 }
 
-/* Reapply the gradient animation */
-body {
-    animation: gradientAnimation 10s infinite linear;
-}
 
-/* Ensuring the futuristic effect remains */
 #futuristic-bg {
     position: absolute; 
     overflow: hidden;
     height: 100%;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    inset: 0;
+    inset: 0 0;
     z-index: 0;
 }
 
-/* Futuristic glowing effect */
+/* אפקט רקע עתידני מגניב */
 #futuristic-bg::before {
     content: "";
     position: absolute;
@@ -76,7 +74,7 @@ body {
     100% { transform: rotate(360deg); }
 }
 
-/* Glowing circles */
+/* אפקט זוהר */
 .glow-circle {
     position: absolute;
     border-radius: 50%;
@@ -84,9 +82,10 @@ body {
     animation: floatEffect 6s ease-in-out infinite;
 }
 
+/*אפקט ריחוף של העיגולים*/  
 @keyframes floatEffect {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+    0%, 100% { transform: translateY(0); } /*תחילת וסיום האנימציה*/
+    50% { transform: translateY(-20px); } /*אמצע האנימציה*/
 }
 
 .circle1 {

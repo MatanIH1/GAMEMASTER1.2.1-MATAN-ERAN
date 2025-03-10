@@ -1,41 +1,99 @@
 body{
     font-family: 'Rajdhani', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-#main-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #000000;
-    color: #ffffff;
 }
 
 .product-container {
-    display: grid;
-    grid-template-rows: 1fr; 
-    grid-gap: 20px;
+    display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     width: 80%;
     margin: auto;
-    background-color: #0002836a; 
+    background-color: #0002836a; /* Slightly lighter than body */
     padding: 20px;
     border-radius: 10px;
 }
 
-.image-container img{
-    width:300px;
-    height:150px;
-    border-radius: 6px;
-    margin: 10px;
-    
-}
-.image-container {
-    display:grid;
-    grid-template-columns: repeat(3,1fr); 
+/* Product Details */
+.product-details {
     flex: 1;
     padding-right: 20px;
+}
+
+.product-details h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 24px;
+    color: #ffffff; 
+    margin: 10px 0;
+}
+
+/* Buy Buttons */
+.buy-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-to-cart {
+    display: inline-block;
+    background-color: #0800ff; 
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.buy-now:hover {
+    background-color: #829fde;
+}
+
+/* Product Image */
+.product-image {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+.product-image img {
+    width: 300px;
+    height: 150px;
+    border-radius: 6px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.product-image img:hover {
+    transform: scale(1.1); /* Slightly zooms in */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+}
+
+
+.credits {
+    background-color: #000283c0;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+    }
+
+    .product-details {
+        padding-right: 0;
+    }
+
+    .product-image img {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
 }

@@ -53,13 +53,13 @@ body{
 }
 
 /* Product Image */
-.product-image {
+.image-container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
 
 
-.product-image img {
+.image-container img {
     width: 300px;
     height: 150px;
     border-radius: 6px;
