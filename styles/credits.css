@@ -1,6 +1,6 @@
 
 #credits {
-    background: rgba(255, 255, 255, 0.2); /* Slight transparency */
+    background: rgb(0, 15, 110); /* Slight transparency */
     color: white;
     text-align: center;
     width: 100%;
@@ -14,7 +14,7 @@
 #credits p{
     margin: 0;
     font-size: 1em;
-    color: #000000;
+    color: #ffffff;
 }
 
 #credits img{

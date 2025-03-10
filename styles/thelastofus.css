@@ -81,6 +81,14 @@ body{
     color: #ffffff;
 }
 
+.price{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0;
+    text-align: left;
+
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .product-container {

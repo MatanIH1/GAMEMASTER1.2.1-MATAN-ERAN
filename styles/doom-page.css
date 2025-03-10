@@ -1,99 +1,120 @@
-body{
-    font-family: 'Rajdhani', sans-serif;
-}
-
+/* Main Product Container */
 .product-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    margin: auto;
-    background-color: #0002836a; /* Slightly lighter than body */
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
     padding: 20px;
-    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: left;
+
+}
+.p {
+    color: #ffffff;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-align: start; 
 }
 
-/* Product Details */
-.product-details {
-    flex: 1;
-    padding-right: 20px;
-}
-
-.product-details h1 {
-    font-size: 36px;
+/* Game Title */
+.product-title {
+    font-size: 32px;
+    font-weight: bold;
     margin-bottom: 10px;
+}
+
+/* Images Section */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-container img {
+    width: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Product Description */
+.product-description {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    max-width: 750px;
+    margin: 20px auto;
+}
+
+/* Developer & Publisher Section */
+.info-box {
+    background-color: rgba(0, 0, 80, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 60%;
+}
+
+/* Price & Buy Section */
+.purchase-info {
+    margin-top: 20px;
 }
 
 .price {
     font-size: 24px;
-    color: #ffffff; 
-    margin: 10px 0;
-}
-
-/* Buy Buttons */
-.buy-buttons {
-    display: flex;
-    flex-direction: column;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 .add-to-cart {
     display: inline-block;
-    background-color: #0800ff; 
+    background-color: #0800ff;
     color: white;
     padding: 10px 20px;
-    margin-top: 10px;
     text-decoration: none;
-    text-align: center;
-    width: 200px;
     border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s ease;
+    font-size: 18px;
 }
 
-.buy-now:hover {
-    background-color: #829fde;
+.add-to-cart:hover {
+    background-color: #5f82ff;
 }
-
-/* Product Image */
-.product-image {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-}
-
-
-.product-image img {
-    width: 300px;
-    height: 150px;
-    border-radius: 6px;
-    margin: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-}
-
-.product-image img:hover {
-    transform: scale(1.1); /* Slightly zooms in */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow */
-}
-
 
 .credits {
-    background-color: #000283c0;
+    background-color: #000000c0;
     padding: 10px;
     border-radius: 10px;
     font-size: 12px;
     color: #ffffff;
+    width: 200px;
+}
+.price {
+    text-align: left;
+    font-size: 24px;
+    color: #ffffff;
+    margin: 10px 0;
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    .product-container {
+    .image-container {
         flex-direction: column;
+        align-items: center;
+    }
+    
+    .image-container img {
+        width: 90%;
     }
 
-    .product-details {
-        padding-right: 0;
-    }
-
-    .product-image img {
-        flex-direction: column;
-        width: 100%;
-        height: auto;
+    .info-box {
+        width: 80%;
     }
 }

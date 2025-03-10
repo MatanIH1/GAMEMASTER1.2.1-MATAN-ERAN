@@ -1,99 +1,79 @@
-body{
-    font-family: 'Rajdhani', sans-serif;
-}
-
-.product-container {
+/* Main Container */
+#main-container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    min-height: 100vh; 
+}
+
+/* Product Container */
+.product-container {
+    display: grid;
+    grid-template-rows: auto auto auto auto; 
+    gap: 20px;
     width: 80%;
-    margin: auto;
-    background-color: #0002836a; /* Slightly lighter than body */
-    padding: 20px;
-    border-radius: 10px;
+    max-width: 900px;
+    text-align: center;
 }
 
-/* Product Details */
-.product-details {
-    flex: 1;
-    padding-right: 20px;
+/* Game Title */
+.product-title {
+    font-size: 2.5em;
+    font-weight: bold;
 }
 
-.product-details h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+/* Image Section */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 15px;
 }
 
-.price {
-    font-size: 24px;
-    color: #ffffff; 
-    margin: 10px 0;
+.image-container img {
+    width: 300px;
+    border-radius: 8px;
+    border-radius: 5px;
 }
 
-/* Buy Buttons */
-.buy-buttons {
-    display: flex;
-    flex-direction: column;
+/* Description */
+.product-description {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Developer & Publisher */
+.credits {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+/* Price & Purchase */
+.purchase-info {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .add-to-cart {
     display: inline-block;
-    background-color: #0800ff; 
+    background: blue;
     color: white;
+    text-decoration: none;
     padding: 10px 20px;
     margin-top: 10px;
-    text-decoration: none;
-    text-align: center;
-    width: 200px;
     border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.3s ease;
 }
 
-.buy-now:hover {
-    background-color: #829fde;
-}
-
-/* Product Image */
-.product-image {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-}
-
-
-.product-image img {
-    width: 300px;
-    height: 150px;
-    border-radius: 6px;
-    margin: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-}
-
-.product-image img:hover {
-    transform: scale(1.1); /* Slightly zooms in */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow */
-}
-
-
-.credits {
-    background-color: #000283c0;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 12px;
-    color: #ffffff;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .product-container {
-        flex-direction: column;
-    }
-
-    .product-details {
-        padding-right: 0;
-    }
-
-    .product-image img {
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-    }
+.add-to-cart:hover {
+    background: darkblue;
 }
