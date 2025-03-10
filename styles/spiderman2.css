@@ -8,7 +8,7 @@ body{
     justify-content: space-between;
     width: 80%;
     margin: auto;
-    background-color: #0002836a; /* Slightly lighter than body */
+    background-color: #0002836a; 
     padding: 20px;
     border-radius: 10px;
 }
