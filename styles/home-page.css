@@ -71,3 +71,78 @@ body, html {
 .card-button:hover {
     background-color: #0056b3;
 }
+
+/* סגנון כפתור ההמבורגר */
+.hamburger-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+    user-select: none;
+}
+
+/* מסתיר את הצ'קבוקס */
+#menu-toggle {
+    display: none;
+}
+
+/* עיצוב תפריט ההמבורגר */
+.mobile-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #111;
+    position: absolute;
+    top: 60px; /* גובה התפריט הראשי */
+    left: 0;
+    width: 100%;
+    display: none;
+    text-align: center;
+}
+
+.mobile-menu li {
+    padding: 15px;
+    border-bottom: 1px solid #333;
+}
+
+.mobile-menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* הצגת התפריט כאשר הצ'קבוקס מסומן */
+#menu-toggle:checked + .hamburger-icon + .mobile-menu {
+    display: block;
+}
+
+/* הצגת תפריט המבורגר רק במסכים קטנים */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+    #main_menu {
+        display: none; /* מסתיר את התפריט הראשי במסכים קטנים */
+    }
+}
+
+/* הצגת התפריט הרגיל במסכים גדולים והסתרת ההמבורגר */
+@media (min-width: 769px) {
+    .hamburger-menu {
+        display: none;
+    }
+}
+.mobile-menu {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+/* הצגת התפריט עם אנימציה */
+#menu-toggle:checked + .hamburger-icon + .mobile-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
