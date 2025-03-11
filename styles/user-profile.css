@@ -1,0 +1,82 @@
+/* Profile Container */
+#my-profile {
+    background: rgb(0, 5, 145);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    width: 350px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Headline */
+.headline {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* Profile Section */
+.profile-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 15px;
+}
+
+/* Profile Picture */
+.profile-picture {
+    width: 250px;
+    height: 280px;
+    border-radius: 50%;
+    border: 3px solid #555;
+}
+
+/* Profile Details */
+.profile-details {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Profile Actions */
+.profile-actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.edit {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit:hover {
+    background-color: #0056b3;
+}
+
+.logout {
+    background-color: #dc3545;
+    color: white;
+}
+
+.logout:hover {
+    background-color: #b02a37;
+}
+
+/* Link Styling */
+.logout a {
+    text-decoration: none;
+    color: white;
+}

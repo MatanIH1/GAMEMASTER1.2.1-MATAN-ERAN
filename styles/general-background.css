@@ -1,18 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh; /* Ensures the background covers the entire page */
     background: linear-gradient(135deg, #0d0221, #20025f, #3a0ca3, #1f51ff);
     background-size: cover;  
     background-position: center; 
-    background-repeat: repeat;
-    background-attachment:scroll;
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
     animation: gradientAnimation 15s ease infinite;
     color: rgb(255, 255, 255); 
-    min-height: 100vh; 
-
 }
-
 /*השפעת הרקע על כל הגוף חוץ מאלמנט מסוים*/
 body > *:not(#futuristic-bg) { 
     position: relative;

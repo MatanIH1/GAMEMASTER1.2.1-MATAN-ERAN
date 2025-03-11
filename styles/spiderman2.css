@@ -31,8 +31,9 @@
 }
 
 .credits {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
     justify-content: space-between;
     font-size: 0.9em;
     color: #555;
