@@ -1,4 +1,6 @@
 /* Main Product Container */
+
+
 .product-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -90,7 +92,6 @@
 
 .credits {
     display:flex;
-    justify-content: space-between;
     flex-direction: column;
     gap: 10px;
     background-color: #000000c0;

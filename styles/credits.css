@@ -1,27 +1,29 @@
-
 #credits {
-    background: rgb(0, 15, 110); /* Slight transparency */
+    background: rgb(0, 15, 110); 
     color: white;
     text-align: center;
     width: 100%;
-    position: sticky; 
+    position: fixed; /* Keeps it stuck to the bottom */
     bottom: 0;
-    font:Rajdhani;
+    left: 0;
+    font-family: Rajdhani, sans-serif;
     padding: 10px;
-
+    z-index: 1000; 
 }
 
-#credits p{
+body {
+    padding-bottom: 50px; 
+}
+
+#credits p {
     margin: 0;
     font-size: 1em;
     color: #ffffff;
 }
 
-#credits img{
-    margin-block: 10px;
+#credits img {
     width: 20px;
     height: 20px;
     margin: 7px;
     box-shadow: 0 2px 4px rgba(255, 255, 255, 0.345);
 }
-
