@@ -2,6 +2,7 @@
 html, body {
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     height: 100%; /* Full height of the viewport */
     min-height: 100%; /* Ensure it covers at least the viewport height */
 }
@@ -11,6 +12,14 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
+=======
+    height: 100vh;
+    background: linear-gradient(135deg, #0d0221, #3a0ca3);
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+>>>>>>> 8256ff8b2f113b66d7eba1d9115d157ff922442c
     animation: gradientAnimation 15s ease infinite;
     color: rgb(0, 9, 184);
     position: relative; /* Ensure body is a positioning context for absolute children */
