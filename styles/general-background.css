@@ -1,42 +1,45 @@
-body { 
+/* Ensure html and body take up full height */
+html, body {
     margin: 0;
     padding: 0;
-    min-height: 100vh; /* Ensures the background covers the entire page */
+    height: 100%; /* Full height of the viewport */
+    min-height: 100%; /* Ensure it covers at least the viewport height */
+}
+
+body {
     background: linear-gradient(135deg, #0d0221, #20025f, #3a0ca3, #1f51ff);
-    background-size: cover;  
-    background-position: center; 
-    background-repeat:repeat; 
-    background-attachment:scroll; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
     animation: gradientAnimation 15s ease infinite;
-    color: rgb(255, 255, 255); 
-}
-/*השפעת הרקע על כל הגוף חוץ מאלמנט מסוים*/
-body > *:not(#futuristic-bg) { 
-    position: relative;
-    z-index: 1; 
+    color: rgb(0, 9, 184);
+    position: relative; /* Ensure body is a positioning context for absolute children */
 }
 
-
-/*אנימציית רקע*/
-@keyframes gradientAnimation { 
-    0% { background-position: 0% 50%; } /*תחילת אנימציה*/
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; } /*סיום אנימציה*/
-}
-
-
+/* Ensure the futuristic background covers the entire content height */
 #futuristic-bg {
-    position: absolute; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto; /* Expand with content */
+    min-height: 100%; /* Cover at least the viewport height */
     overflow: hidden;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    inset: 0 0;
     z-index: 0;
 }
 
-/* אפקט רקע עתידני מגניב */
+/* Rest of your CSS remains unchanged */
+body > *:not(#futuristic-bg) {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 #futuristic-bg::before {
     content: "";
     position: absolute;
@@ -73,7 +76,6 @@ body > *:not(#futuristic-bg) {
     100% { transform: rotate(360deg); }
 }
 
-/* אפקט זוהר */
 .glow-circle {
     position: absolute;
     border-radius: 50%;
@@ -81,10 +83,9 @@ body > *:not(#futuristic-bg) {
     animation: floatEffect 6s ease-in-out infinite;
 }
 
-/*אפקט ריחוף של העיגולים*/  
 @keyframes floatEffect {
-    0%, 100% { transform: translateY(0); } /*תחילת וסיום האנימציה*/
-    50% { transform: translateY(-20px); } /*אמצע האנימציה*/
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
 }
 
 .circle1 {
